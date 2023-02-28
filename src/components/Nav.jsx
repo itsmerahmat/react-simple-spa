@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Nav = () => {
+export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -178,4 +178,4 @@ export const Nav = () => {
       </div>
     </div>
   );
-};
+}

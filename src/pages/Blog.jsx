@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const Blog = () => {
+export default function Blog() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -134,4 +134,4 @@ export const Blog = () => {
       </div>
     </section>
   );
-};
+}

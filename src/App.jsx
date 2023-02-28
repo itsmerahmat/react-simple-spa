@@ -1,12 +1,12 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import { Blog } from "./pages/Blog";
-import { Contact } from "./pages/Contact";
-import { Profile } from "./pages/Profile";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Profile from "./pages/Profile";
 import BlogDetail from "./pages/BlogDetail";
-import { NotMatch } from "./pages/NotMatch";
-import { Nav } from "./components/Nav";
+import NotMatch from "./pages/NotMatch";
+import Nav from "./components/Nav";
 
 function App() {
   return (
