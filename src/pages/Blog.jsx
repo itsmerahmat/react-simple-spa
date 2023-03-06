@@ -78,16 +78,16 @@ export default function Blog() {
       </div>
 
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="grid gap-8 lg:grid-cols-1 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           {loading ? (
             <h1 className="mx-auto py-5">Loading . . .</h1>
           ) : (
-            <div>
+            <>
               {articles.map(function (article) {
                 return (
                   <div
                     key={article.id}
-                    className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+                    className="overflow-hidden transition-shadow duration-300 bg-white rounded"
                   >
                     <img
                       src={article.imageUrl}
@@ -112,11 +112,11 @@ export default function Blog() {
                         to={`/blog/${article.id}`}
                         aria-label="Category"
                         title={article.title}
-                        className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                        className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors lg:line-clamp-2 line-clamp-none duration-200 hover:text-deep-purple-accent-700"
                       >
                         {article.title}
                       </Link>
-                      <p className="mb-2 text-gray-700">{article.summary}</p>
+                      <p className="mb-2 text-gray-700 lg:line-clamp-3 line-clamp-none">{article.summary}</p>
                       <a
                         href="/"
                         aria-label=""
@@ -128,7 +128,7 @@ export default function Blog() {
                   </div>
                 );
               })}
-            </div>
+            </>
           )}
         </div>
       </div>
