@@ -8,4 +8,4 @@ Belajar React dan SPA, dengan membuat web sederhana.
 
 ## Demo
 
-Coming Soon
+Check on [Netlify](https://symphonious-piroshki-c30637.netlify.app/)
