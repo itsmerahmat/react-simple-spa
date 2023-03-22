@@ -43,7 +43,7 @@ export default function Contact() {
                 First name
               </label>
               <input
-                placeholder="John"
+                placeholder="Nama Depan"
                 required
                 type="text"
                 className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
@@ -59,7 +59,7 @@ export default function Contact() {
                 Last name
               </label>
               <input
-                placeholder="Doe"
+                placeholder="Nama Belakang"
                 required
                 type="text"
                 className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
@@ -72,7 +72,7 @@ export default function Contact() {
                 E-mail
               </label>
               <input
-                placeholder="john.doe@example.org"
+                placeholder="your.email@example.com"
                 required
                 type="text"
                 className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"

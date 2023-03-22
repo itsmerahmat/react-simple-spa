@@ -27,8 +27,7 @@ export default function Profile() {
           </a>
           <h5 className="mb-4 text-4xl font-extrabold leading-none">
             Hai, saya Rahmat
-            <br className="hidden md:block" />
-            seorang{" "}
+            <br className="hidden md:block" /> seorang{" "}
             <span className="inline-block text-deep-purple-accent-400">
               Developer
             </span>
