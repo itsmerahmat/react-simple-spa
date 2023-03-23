@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function BlogDetail() {
   const params = useParams();
@@ -34,7 +35,11 @@ export default function BlogDetail() {
   }
 
   return (
-    <section>
+    <motion.section
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       {loading ? (
         <div className="flex justify-center col-span-3" role="status">
           <svg
@@ -84,6 +89,6 @@ export default function BlogDetail() {
           </div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 }

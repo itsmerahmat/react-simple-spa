@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Blog() {
   const [articles, setArticles] = useState([]);
@@ -20,7 +21,11 @@ export default function Blog() {
   }, []);
 
   return (
-    <section>
+    <motion.section
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
           <div className="flex flex-col mb-8 sm:text-center sm:mb-0">
@@ -151,6 +156,6 @@ export default function Blog() {
           )}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
