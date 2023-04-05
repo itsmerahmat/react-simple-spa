@@ -12,4 +12,4 @@ Belajar React dan SPA, dengan membuat web sederhana.
 
 ## Demo
 
-Check on [Netlify](https://symphonious-piroshki-c30637.netlify.app/)
+Check on [Netlify](https://belajar-react-spa.netlify.app/)
